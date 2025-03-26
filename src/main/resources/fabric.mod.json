@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lockedchests",
+	"version": "${version}",
+	"name": "LockedChests",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"memothelemo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lockedchests/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "xyz.memothelemo.lockedchests.LockedChests",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/class_2595": ["xyz/memothelemo/lockedchests/events/ModifableImmuneToExplosion"]
+		}
+	},
+	"mixins": [
+		"lockedchests.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+		"luckperms": "5.4.150"
+	}
+}

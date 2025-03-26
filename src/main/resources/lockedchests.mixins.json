@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "xyz.memothelemo.lockedchests.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ChestEntityExplosionMixin",
+    "ChestInventoryMixin",
+    "ChestPlaceMixin",
+    "ExplosionMixin",
+    "LockedChestsMixin",
+    "PlayerJoinMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
