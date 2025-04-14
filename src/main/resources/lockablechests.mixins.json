@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "xyz.memothelemo.lockablechests.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockStateMixin",
+    "ChestBlockEntityMixin",
+    "CompoundContainerMixin",
+    "HopperMixin",
+    "InventoryChangeMixin",
+    "PlayerListMixin",
+    "ServerGamePacketListenerMixin",
+    "ServerPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
