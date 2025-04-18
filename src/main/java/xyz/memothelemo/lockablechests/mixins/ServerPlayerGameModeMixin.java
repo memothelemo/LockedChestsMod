@@ -117,6 +117,8 @@ public abstract class ServerPlayerGameModeMixin {
 
         if (this.isCreative()) stack.setCount(oldCount);
         CriteriaTriggers.ITEM_USED_ON_BLOCK.trigger(player, hitResult.getBlockPos(), stack);
+
+        cir.setReturnValue(callbackResult);
     }
 
 
